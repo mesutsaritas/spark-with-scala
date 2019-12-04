@@ -1,0 +1,17 @@
+package com.saritasmesut
+
+import org.apache.spark._
+
+object StarCount {
+
+  def main(args: Array[String]): Unit = {
+    printf("Hello Scala");
+
+    val sparkContext = new SparkContext("local[*]","StarCounter")
+    
+    val linesOfFile=sparkContext.textFile("../ml-100/u.data", minPartitions)
+    
+
+  }
+
+}
